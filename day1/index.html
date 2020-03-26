@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js"></script>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/logo.svg" alt="logo" class="logo" />
+    <img
+      src="./images/bg-pattern-desktop.svg"
+      alt="background image"
+      class="bg-picture"
+    />
+    <img
+      src="./images/hero-desktop.jpg"
+      alt="a photo with a woman"
+      class="bg-picture"
+    />
+
+    <div class="main-content">
+      <div class="coming-soon">
+        <h1>
+          We're<br /><span>coming<br />soon</span>
+        </h1>
+      </div>
+      <div class="detail-section">
+        <h2>
+          Hello fellow shoppers! We're currently building our new<br />
+          fashion store. Add your email below to stay up-to-date with<br />announcements
+          and our launch deals.
+        </h2>
+      </div>
+      <div class="email-section">
+        <img src="./images/icon-error.svg" alt="error" class="error-icon" />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          size="60"
+          maxlength="60"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          class="email-field"
+        />
+        <input type="submit" value=">" class="submit-btn" />
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://twitter.com/Kotaro6661" target="_blank">Kotaro</a>.
+      </p>
+    </footer>
+  </body>
+</html>
