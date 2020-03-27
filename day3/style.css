@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --clr-red: hsl(0, 100%, 74%);
+  --clr-green: hsl(154, 59%, 51%);
+
+  /* Accent */
+  --clr-blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --clr-darkblue: hsl(249, 10%, 26%);
+  --clr-grayblue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
