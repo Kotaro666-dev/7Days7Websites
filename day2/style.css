@@ -24,7 +24,7 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100%;
   height: 100%;
-  background-image: url(../day2/images/bg-intro-desktop.png);
+  background-image: url(./images/bg-intro-desktop.png);
   background-color: var(--clr-red);
   display: flex;
 }
