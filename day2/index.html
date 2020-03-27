@@ -24,60 +24,72 @@
     <div class="left-section">
       <h1 class="main-slogan">Learn to code by<br />watching others</h1>
       <h2 class="sub-slogan">
-        See how experienced developers solve problems in real-time. Watching
-        scripted tutorials is great, but understanding how developers think is
-        invaluable.
+        See how experienced developers solve problems in real-time.<br />Watching
+        scripted tutorials is great, but understanding how<br />developers think
+        is invaluable.
       </h2>
     </div>
     <div class="right-section">
       <div class="ad-slogan">
         <span>Try it free 7 days</span> then $20/mo. thereafter
       </div>
-    </div>
-    <div class="form-section">
-      <form class="input-section">
-        <input
-          type="text"
-          name="first-name"
-          placeholder="First Name"
-          class="input-area first-name"
-          id="firstName"
-          required
-        />
-        <input
-          type="text"
-          name="last-name"
-          placeholder="Last Name"
-          class="input-area last-name"
-          id="lastName"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          class="input-area email"
-          id="email"
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          class="input-area password"
-          id="password"
-          required
-        />
-      </form>
-      <button type="button" name="button" id="button" onclick="">
-        Claim your free trial
-      </button>
-      <div class="terms">
-        By clicking the button, you are agreeing to our
-        <a href="#" target="_blank">Terms and Services</a>
+      <div class="form-section">
+        <form class="input-section">
+          <input
+            type="text"
+            name="first-name"
+            placeholder="First Name"
+            class="input-area first-name"
+            id="firstName"
+            required
+          />
+          <span class="error-msg-first" id="errorMsgFirst"
+            >First Name cannot be empty</span
+          >
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Last Name"
+            class="input-area last-name"
+            id="lastName"
+            required
+          />
+          <span class="error-msg-last" id="errorMsgLast"
+            >Last Name cannot be empty</span
+          >
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            class="input-area email"
+            id="email"
+            required
+          />
+          <span class="error-msg-email" id="errorMsgEmail"
+            >Looks like this is not an email</span
+          >
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="input-area password"
+            id="password"
+            required
+          />
+          <span class="error-msg-pwd" id="errorMsgPwd"
+            >Password cannot be empty</span
+          >
+        </form>
+        <button type="button" name="button" class="button" id="button">
+          <span>Claim your free trial</span>
+        </button>
+        <div class="terms">
+          By clicking the button, you are agreeing to our
+          <a href="#" target="_blank">Terms and Services</a>
+        </div>
       </div>
     </div>
-    <footer>
+    <!-- <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -85,6 +97,6 @@
         >. Coded by
         <a href="https://twitter.com/Kotaro6661" target="_blank">Kotaro</a>.
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>
