@@ -1,0 +1,156 @@
+/* General */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --clr-pink: hsl(0, 36%, 70%);
+  --clr-softred: hsl(0, 93%, 68%);
+
+  /* Neutral */
+  --clr-darkred: hsl(0, 6%, 24%);
+
+  /* Gradients */
+  --clr-gradation1: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  --clr-gradation2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  /* font weight */
+  --weight-weak: 300;
+  --weight-middle: 400;
+  --weight-strong: 600;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  /* background: var(--clr-gradation1); */
+  background: var(--clr-gradation1);
+  position: relative;
+}
+
+/* Logo */
+
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+/* Backgroud Picture */
+
+.bg-picture {
+  float: left;
+}
+
+/* Main Content */
+.coming-soon {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+
+  color: var(--clr-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.coming-soon span {
+  color: var(--clr-darkred);
+  font-weight: 600;
+}
+
+.detail-section {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+
+  max-width: 40%;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 300%;
+  letter-spacing: 0.1em;
+  color: var(--clr-pink);
+}
+
+.email-section {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+.email-field {
+  padding: 15px 15px;
+  border-radius: 20px;
+  border: solid 0.5px var(--clr-pink);
+  background-color: transparent;
+}
+
+.email-field:focus {
+  border-color: var(--clr-darkred);
+  outline: none;
+}
+
+.submit-btn {
+  position: absolute;
+  top: 0;
+  left: 80%;
+
+  height: 47px;
+  width: 80px;
+  border-color: transparent;
+
+  color: white;
+  font-size: 20px;
+  background-color: var(--clr-softred);
+  border-radius: 20px;
+  box-shadow: 1px 0 10px 0.2px #999;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+.submit-btn:hover {
+  background-color: var(--clr-pink);
+  filter: brightness(120%);
+  box-shadow: none;
+}
+
+.error-icon {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+
+  visibility: hidden;
+}
+
+.error-message {
+  position: absolute;
+  top: 120%;
+  left: 3%;
+
+  color: var(--clr-pink);
+  visibility: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
