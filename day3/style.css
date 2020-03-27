@@ -6,19 +6,21 @@
 
 :root {
   /* Primary */
-  --clr-red: hsl(0, 100%, 74%);
-  --clr-green: hsl(154, 59%, 51%);
+  --clr-blue: hsl(223, 87%, 63%);
 
-  /* Accent */
-  --clr-blue: hsl(248, 32%, 49%);
+  /* Secondary */
+  --clr-paleBlue: hsl(223, 100%, 88%);
+  --clr-lightRed: hsl(354, 100%, 66%);
 
   /* Neutral */
-  --clr-darkblue: hsl(249, 10%, 26%);
-  --clr-grayblue: hsl(246, 25%, 77%);
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-dakrBlue: hsl(209, 33%, 12%);
 }
 
 body {
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  max-width: 1000px;
 }
 
 .attribution {

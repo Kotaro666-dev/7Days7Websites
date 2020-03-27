@@ -12,13 +12,56 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
     <script defer src="index.js"></script>
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
-
+    <div class="ping-mark">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
+    <div class="main-slogan">
+      <h1>We are launching <span>soon!</span></h1>
+    </div>
+    <div class="sub-slogan">
+      <h2>Subscribe and get notified Notify Me</h2>
+    </div>
+    <div class="notify">
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email address..."
+        class="email"
+        id="email"
+        required
+      />
+      <button type="button" name="button" class="button" id="button">
+        <span class="notify-me">Notfiy Me</span>
+      </button>
+    </div>
+    <div class="main-image">
+      <img
+        src="./images/illustration-dashboard.png"
+        alt="illustration of dashboard"
+      />
+    </div>
+    <div class="socia-icon">
+      <ul>
+        <li class="icon-item"><i class="fab fa-facebook-f"></i></li>
+        <li class="icon-item"><i class="fab fa-twitter"></i></li>
+        <li class="icon-item"><i class="fab fa-instagram"></i></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </div>
     <footer>
       <p class="attribution">
         Challenge by
