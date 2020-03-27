@@ -114,7 +114,7 @@ body {
 }
 
 .error-icon {
-  background-image: url(../day2/images/icon-error.svg);
+  background-image: url(./images/icon-error.svg);
   background-position: 400px 12px;
   background-repeat: no-repeat;
   border: solid 2px var(--clr-red);
