@@ -11,7 +11,7 @@ clickedSubmit.addEventListener("click", function() {
   let emailInputText = document.getElementById("email").value;
   let passwordInputText = document.getElementById("password").value;
 
-  if (firstNameInputText == null) {
+  if (firstNameInputText.length != 0) {
     document.getElementById("firstName").classList.remove("error-icon");
     document.getElementById("errorMsgFirst").style.visibility = "hidden";
 
@@ -22,10 +22,9 @@ clickedSubmit.addEventListener("click", function() {
     // return false;
   }
 
-  if (lastNameInputText == null) {
+  if (lastNameInputText.length != 0) {
     document.getElementById("lastName").classList.remove("error-icon");
     document.getElementById("errorMsgLast").style.visibility = "hidden";
-
     // return true;
   } else {
     document.getElementById("lastName").classList.add("error-icon");
@@ -47,11 +46,10 @@ clickedSubmit.addEventListener("click", function() {
   if (passwordInputText.match(passwordFormat)) {
     document.getElementById("password").classList.remove("error-icon");
     document.getElementById("errorMsgPwd").style.visibility = "hidden";
-
-    // return true;
   } else {
     document.getElementById("password").classList.add("error-icon");
     document.getElementById("errorMsgPwd").style.visibility = "visible";
-    // return false;
   }
+
+  return 0;
 });
