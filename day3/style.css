@@ -197,6 +197,12 @@ body {
   color: white;
 }
 
+.social-icon a:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  border-bottom: none;
+}
+
 .facebook {
   padding: 10px 15px;
 }
