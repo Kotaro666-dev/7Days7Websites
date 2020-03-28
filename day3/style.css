@@ -69,6 +69,7 @@ body {
 }
 
 .notify {
+  position: relative;
   height: 100px;
   width: 800px;
   padding: 0 auto;
@@ -95,8 +96,8 @@ body {
 
 .error-msg-section {
   position: absolute;
-  top: 36%;
-  left: 32%;
+  top: 40%;
+  left: 18%;
   font-size: 10px;
   color: var(--clr-lightRed);
   visibility: hidden;

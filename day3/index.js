@@ -5,12 +5,8 @@ function checkEmailValidation() {
   if (emailInputText.match(mailFormat)) {
     document.getElementById("errorMsg").style.visibility = "hidden";
     document.getElementById("email").classList.remove("error-msg");
-
-    return true;
   } else {
     document.getElementById("errorMsg").style.visibility = "visible";
     document.getElementById("email").classList.add("error-msg");
-
-    return false;
   }
 }
