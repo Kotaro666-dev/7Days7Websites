@@ -47,12 +47,15 @@ body {
   text-align: center;
   line-height: 50px;
   margin: 5px auto;
+}
 
+.main-slogan h1 {
   font-weight: 300;
   color: var(--clr-gray);
 }
 
 .main-slogan span {
+  font-weight: 700;
   color: var(--clr-darkBlue);
 }
 
@@ -63,8 +66,10 @@ body {
   text-align: center;
   margin: 0 auto;
   line-height: 20px;
+}
 
-  font-size: 12px;
+.sub-slogan h2 {
+  font-size: 18px;
   font-weight: 300;
 }
 
