@@ -24,52 +24,76 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <div class="ping-mark">
-      <img src="./images/logo.svg" alt="logo" />
+    <div class="container">
+      <div class="ping-mark">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="main-slogan">
+        <h1>We are launching <span>soon!</span></h1>
+      </div>
+      <div class="sub-slogan">
+        <h2>Subscribe and get notified</h2>
+      </div>
+      <div class="notify">
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email address..."
+          class="email"
+          id="email"
+          required
+        />
+        <button
+          type="button"
+          name="button"
+          class="button"
+          id="button"
+          onclick="checkEmailValidation()"
+        >
+          <span class="notify-me">Notfiy Me</span>
+        </button>
+      </div>
+      <div class="error-msg-section" id="errorMsg">
+        <span>Please provide a valid email address</span>
+      </div>
+      <div class="main-image">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="illustration of dashboard"
+          class="img-item"
+        />
+      </div>
+      <div class="social-section">
+        <ul class="social-icon">
+          <li class="icon-item">
+            <a href="https://www.facebook.com/" target="_blank" class="facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="icon-item">
+            <a href="https://twitter.com/ " target="_blank" class="twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="icon-item">
+            <a href="https://instagram.com" target="_blank" class="instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://twitter.com/Kotaro6661" target="_blank">Kotaro</a>.
+        </p>
+      </footer>
     </div>
-    <div class="main-slogan">
-      <h1>We are launching <span>soon!</span></h1>
-    </div>
-    <div class="sub-slogan">
-      <h2>Subscribe and get notified Notify Me</h2>
-    </div>
-    <div class="notify">
-      <input
-        type="email"
-        name="email"
-        placeholder="Your email address..."
-        class="email"
-        id="email"
-        required
-      />
-      <button type="button" name="button" class="button" id="button">
-        <span class="notify-me">Notfiy Me</span>
-      </button>
-    </div>
-    <div class="main-image">
-      <img
-        src="./images/illustration-dashboard.png"
-        alt="illustration of dashboard"
-      />
-    </div>
-    <div class="socia-icon">
-      <ul>
-        <li class="icon-item"><i class="fab fa-facebook-f"></i></li>
-        <li class="icon-item"><i class="fab fa-twitter"></i></li>
-        <li class="icon-item"><i class="fab fa-instagram"></i></li>
-      </ul>
-    </div>
-    <div class="copyright">
-      &copy; Copyright Ping. All rights reserved.
-    </div>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://twitter.com/Kotaro6661" target="_blank">Kotaro</a>.
-      </p>
-    </footer>
   </body>
 </html>
