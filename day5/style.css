@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+:root {
+  /* Primary */
+  --clr-violet: hsl(257, 40%, 49%);
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background: var(--clr-violet);
+  background-image: url(./images/bg-desktop.svg);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
