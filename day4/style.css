@@ -15,21 +15,427 @@
   --clr-GrayBlue: hsl(208, 11%, 55%);
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  width: 100%;
+}
+
 header {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   background-image: url(./images/bg-hero-desktop.svg);
+
+  height: 700px;
+  background-color: var(--clr-veryPaleCyan);
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
+/* Header upper zone */
+
+.header-upper {
+  height: 20%;
+  background: var(--clr-veryPaleCyan);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.logo-header {
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+.btn-white {
+  margin-top: 2rem;
+  margin-right: 5rem;
+
+  width: 13rem;
+  height: 3rem;
+  border: solid 1px var(--clr-veryPaleCyan);
+  border-radius: 10rem;
+  box-shadow: 0px 1px 21px -10px #c4c4c4;
+
+  cursor: pointer;
+}
+
+.btn-white span {
+  color: var(--clr-darkDarkCyan);
+}
+
+.btn-white:focus {
+  outline: none;
+}
+
+.btn-white:hover {
+  opacity: 0.7;
+}
+
+.btn-white:active {
+  opacity: 0.5;
+}
+
+/* Header lower zone  */
+
+.header-lower {
+  height: 80%;
+  background: var(--clr-veryPaleCyan);
+}
+
+.header-lower-left {
+  width: 40%;
+  float: left;
+}
+
+.main-slogan {
+  width: 28rem;
+  height: 6rem;
+  /* background: white; */
+
+  font-size: 2rem;
+  text-align: left;
+
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+.main-slogan p {
+  display: inline-block;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.sub-slogan {
+  width: 28rem;
+  height: 5rem;
+  /* background: yellow; */
+
+  text-align: left;
+  padding-top: 1rem;
+
+  margin-left: 5rem;
+}
+
+.sub-slogan p {
+  display: inline-block;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.header-lower-right {
+  width: 60%;
+  float: left;
+}
+
+.header-lower-right img {
+  width: 80%;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.btn-pink-header {
+  width: 13rem;
+  height: 3rem;
+  background-color: var(--clr-pink);
+  border: solid 1px transparent;
+  border-radius: 20rem;
+
+  margin-top: 2rem;
+  margin-left: 5rem;
+
+  cursor: pointer;
+}
+
+.btn-pink-header span {
+  color: white;
+}
+
+.btn-pink-header:focus {
+  outline: none;
+}
+
+.btn-pink-header:hover {
+  opacity: 0.7;
+}
+
+.btn-pink-header:active {
+  opacity: 0.5;
+}
+
+/* Main zone */
+
+.main {
+  height: 1700px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.main-box {
+  width: 90%;
+  height: 25%;
+  background: white;
+  margin-bottom: 2rem;
+
+  border: solid 1px transparent;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 21px -10px #c4c4c4;
+}
+
+.main-box .left-section {
+  width: 50%;
+  float: left;
+}
+
+.main-box .right-section {
+  width: 50%;
+  float: left;
+}
+
+.main-box img {
+  width: 23rem;
+}
+
+.title {
+  color: var(--clr-darkDarkCyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  width: 28rem;
+  height: 3rem;
+
+  text-align: left;
+}
+
+.details {
+  color: var(--clr-GrayBlue);
+
+  width: 28rem;
+  height: 6rem;
+
+  text-align: left;
+}
+
+.left-section-title {
+  padding-top: 8rem;
+  padding-left: 6rem;
+}
+
+.right-section-title {
+  padding-top: 8rem;
+  padding-left: 6rem;
+}
+
+.right-section-picture {
+  padding-top: 3rem;
+  padding-left: 6rem;
+}
+
+.left-section-picture {
+  padding-top: 3rem;
+  padding-left: 6rem;
+}
+
+.first-section {
+  margin-top: 5rem;
+}
+
+.third-section {
+  margin-bottom: 10rem;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  height: 500px;
+  background: var(--clr-darkDarkCyan);
+  color: white;
+  margin-top: 10rem;
+}
+
+.catch {
+  width: 50%;
+  height: 50%;
+  background: white;
+
+  position: absolute;
+  top: -35%;
+  left: 25%;
+
+  border: solid 1px transparent;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 21px -10px #c4c4c4;
+
+  text-align: center;
+}
+
+.catch-slogan {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-darkDarkCyan);
+
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.btn-pink-main {
+  width: 20rem;
+  height: 4rem;
+  background-color: var(--clr-pink);
+  border: solid 1px transparent;
+  border-radius: 20rem;
+  color: white;
+
+  box-shadow: -1px 4px 3px 2px #f7f7f7;
+
+  cursor: pointer;
+}
+
+.btn-pink-main:focus {
+  outline: none;
+}
+
+.btn-pink-main:hover {
+  opacity: 0.7;
+}
+
+.btn-pink-main:active {
+  opacity: 0.5;
+}
+
+.footer-items {
+  padding-top: 10rem;
   font-weight: 400;
+}
+
+.footer-items ul {
+  list-style: none;
+}
+
+.footer-item {
+  width: 33%;
+  float: left;
+}
+
+/* Left part */
+
+.left-footer {
+  padding-left: 4rem;
+  display: block;
+}
+
+.item {
+  padding-bottom: 1.5rem;
+}
+
+.item span {
+  margin-left: 1rem;
+}
+
+/* Middle part */
+
+.middle-footer {
+  text-align: left;
+  padding-left: 10rem;
+}
+
+.middle-footer li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.middle-footer li a {
+  display: block;
+  width: 8rem;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.middle-footer li a:visited {
+  color: white;
+}
+
+.middle-footer li a:hover {
+  color: var(--clr-GrayBlue);
+}
+
+/* Right part Social */
+
+.right-footer {
+  padding-left: 6rem;
+}
+
+.icon-item {
+  display: inline-block;
+  text-align: center;
+}
+
+.icon-item a {
+  display: block;
+  width: 2rem;
+  padding: 0.2rem;
+  border: solid 1px white;
+  border-radius: 20rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+/* .icon-item a:hover {
+  opacity: 0.8;
+} */
+.facebook:hover {
+  color: #305097;
+  background: white;
+  border: solid 1px #305097;
+}
+
+.twitter:hover {
+  color: #00aced;
+  background: white;
+  border: solid 1px #00aced;
+}
+
+.instagram:hover {
+  color: #d93177;
+  background: white;
+  border: solid 1px #d93177;
+}
+
+/* Advertisement */
+
+.copyright p {
+  position: absolute;
+  bottom: 10%;
+  left: 75%;
+
+  font-size: 0.8rem;
+  color: white;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  color: white;
 }
 .attribution a {
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.attribution a:visited {
+  color: white;
+}
+
+.attribution a:hover {
   color: hsl(228, 45%, 44%);
 }
