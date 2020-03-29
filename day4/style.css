@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+:root {
+  /* Primary */
+  --clr-pink: hsl(322, 100%, 66%);
+
+  /* Neutral */
+  --clr-veryPaleCyan: hsl(193, 100%, 96%);
+  --clr-darkDarkCyan: hsl(192, 100%, 9%);
+  --clr-GrayBlue: hsl(208, 11%, 55%);
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-image: url(./images/bg-hero-desktop.svg);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
