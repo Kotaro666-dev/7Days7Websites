@@ -227,6 +227,7 @@ footer {
     position: relative;
     height: 10vh;
     width: 100%;
+    margin: 0 auto;
   }
 
   .logo {
