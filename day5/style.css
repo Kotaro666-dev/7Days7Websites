@@ -10,11 +10,6 @@
   --clr-violet: hsl(257, 40%, 49%);
 }
 
-header {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -22,13 +17,246 @@ body {
   height: 100vh;
   width: 100vw;
   background: var(--clr-violet);
-  background-image: url(./images/bg-desktop.svg);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  height: 15vh;
+  width: 100%;
+  /* background: cyan; */
+}
+
+.logo {
+  width: 40%;
+  max-width: 15rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+main {
+  width: 100%;
+  height: 70vh;
+  /* background-color: cyan; */
+}
+
+.left-section {
+  text-align: center;
+}
+
+.left-section img {
+  width: 80%;
+  max-width: 500px;
+}
+
+.right-section {
+  width: 90vw;
+  text-align: center;
+  margin: auto;
+}
+
+.main-slogan {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.sub-slogan {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.button {
+  width: 10rem;
+  height: 2rem;
+  border: solid 1px white;
+  border-radius: 20rem;
+  box-shadow: 0px 16px 21px -8px rgba(0, 0, 0, 0.36);
+  background: white;
+  color: var(--clr-violet);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  transform: scale(1.02);
+}
+
+.button:active {
+  transform: scale(1);
+}
+
+.button span {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  height: 15vh;
+  width: 100%;
+}
+
+.social-icon {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.social-icon ul {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social-icon li {
+  display: flex;
+  width: auto;
+  padding: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon a {
+  display: block;
+  color: white;
+  border: solid 1px white;
+  border-radius: 20rem;
+  cursor: pointer;
+}
+
+.social-icon a:focus {
+  outline: none;
+}
+
+.social-icon a:hover {
+  background: white;
+  color: var(--clr-violet);
+}
+
+.facebook {
+  padding: 0.4rem 0.8rem;
+}
+
+.twitter {
+  padding: 0.4rem 0.6rem;
+}
+
+.instagram {
+  padding: 0.4rem 0.6rem;
 }
 
 .attribution {
-  font-size: 11px;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.5rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
+  font-size: inherit;
 }
+
+/* 376 */
+@media (min-width: 420px) {
+  .body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  header {
+    height: 20vh;
+    background-image: none;
+  }
+
+  main {
+    width: 100%;
+    height: 70vh;
+    /* background-color: cyan; */
+  }
+
+  footer {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    /* background: red; */
+  }
+
+  .logo {
+    width: 20%;
+    max-width: 15rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .left-section {
+    width: 60%;
+    height: 100%;
+    float: left;
+
+    text-align: center;
+  }
+
+  .left-section img {
+    width: 95%;
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+  }
+
+  .right-section {
+    width: 40%;
+    height: 100%;
+    float: left;
+
+    text-align: left;
+  }
+
+  .main-slogan {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+
+  .sub-slogan {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .button {
+    height: 3rem;
+  }
+
+  .button span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .social-icon {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding-right: 5rem;
+  }
+}
+
+/* @media (min-width: 769px) {
+  .main-slogan {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+} */
