@@ -197,6 +197,10 @@ footer {
     text-align: center;
   }
 
+  footer {
+    margin: 0 auto;
+  }
+
   .social-icon {
     width: 100%;
     height: 100%;
