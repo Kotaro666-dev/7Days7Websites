@@ -98,7 +98,7 @@ body {
 
 .email-field:focus {
   border-color: var(--clr-darkred);
-  outline: none;
+  outline: transparent;
 }
 
 .submit-btn {
