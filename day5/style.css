@@ -27,9 +27,8 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 
-  height: 15vh;
+  height: 13vh;
   width: 100%;
-  /* background: cyan; */
 }
 
 .logo {
@@ -102,8 +101,9 @@ main {
 
 footer {
   position: relative;
-  height: 15vh;
+  height: 17vh;
   width: 100%;
+  margin-top: 3rem;
 }
 
 .social-icon {
