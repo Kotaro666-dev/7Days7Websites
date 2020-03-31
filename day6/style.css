@@ -27,7 +27,8 @@ body {
 
 .title {
   font-size: 1.5rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
+  padding-top: 10%;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -42,6 +43,7 @@ body {
   height: 60%;
   margin: 18% auto;
   grid-template-rows: 1fr 1fr 1fr;
+  box-shadow: 0px 23px 45px -10px rgba(0, 0, 0, 0.21);
 }
 
 /* Make squares responsive */
@@ -66,6 +68,9 @@ body {
   background: white;
   text-align: left;
   font-size: 0.8rem;
+
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .first-section .title {
@@ -119,7 +124,7 @@ body {
   background: var(--clr-brightYellow);
   color: white;
   border-radius: 0.5rem;
-  border: solid 1px transparent
+  border: solid 1px transparent;
   box-shadow: 0px 23px 45px -10px rgba(0, 0, 0, 0.21);
 }
 
@@ -178,4 +183,200 @@ footer {
   color: hsl(228, 45%, 44%);
   font-size: 11px;
   text-decoration: none;
+}
+
+@media (min-width: 470px) and (max-width: 674px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .item {
+    padding-left: 2rem;
+  }
+
+  .first-section .subtitle {
+    font-size: 1.5rem;
+    padding-top: 10%;
+  }
+
+  .first-section .details {
+    font-size: 1.2rem;
+    padding-top: 10%;
+    line-height: 2rem;
+  }
+
+  .second-section .money {
+    font-size: 1.5rem;
+  }
+
+  .second-section .details {
+    font-size: 1.2rem;
+    padding-top: 10%;
+  }
+
+  .second-section button {
+    height: 4rem;
+    background: var(--clr-brightYellow);
+    color: white;
+    border-radius: 0.5rem;
+    border: solid 1px transparent;
+    box-shadow: 0px 23px 45px -10px rgba(0, 0, 0, 0.21);
+  }
+
+  button p {
+    font-size: 1.5rem;
+  }
+
+  .third-section ul {
+    padding-top: 10%;
+  }
+
+  .third-section ul li {
+    padding-top: 3%;
+  }
+
+  .third-section ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 675px) and (max-width: 959px) {
+  /* body {
+    background: red;
+  } */
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .item {
+    padding-left: 3rem;
+  }
+
+  .first-section .subtitle {
+    font-size: 2rem;
+    padding-top: 15%;
+  }
+
+  .first-section .details {
+    font-size: 1.5rem;
+    padding-top: 15%;
+    line-height: 3rem;
+  }
+
+  .second-section .money {
+    padding-top: 15%;
+    font-size: 1.5rem;
+  }
+
+  .second-section .money span {
+    font-size: 2.8rem;
+  }
+
+  .second-section .details {
+    font-size: 1.5rem;
+    padding-top: 15%;
+  }
+
+  .second-section button {
+    height: 5rem;
+    background: var(--clr-brightYellow);
+    color: white;
+    border-radius: 0.5rem;
+    border: solid 1px transparent;
+    box-shadow: 0px 23px 45px -10px rgba(0, 0, 0, 0.21);
+  }
+
+  button p {
+    font-size: 2rem;
+  }
+
+  .third-section ul {
+    padding-top: 10%;
+  }
+
+  .third-section ul li {
+    padding-top: 3%;
+  }
+
+  .third-section ul li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    position: relative;
+    background: var(--clr-lightGray);
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    display: grid;
+    width: 60vw;
+    height: 75vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "areaA areaA"
+      "areaB areaC";
+
+    margin: 10vh auto;
+  }
+
+  .first-section,
+  .second-section,
+  .third-section {
+    content: "";
+    padding-bottom: 0;
+    display: inline-block;
+  }
+
+  .grid {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .first-section {
+    grid-area: areaA;
+  }
+
+  .second-section {
+    grid-area: areaB;
+  }
+
+  .third-section {
+    grid-area: areaC;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .item {
+    padding-left: 2.5rem;
+  }
+
+  .first-section .subtitle {
+    font-size: 1.3rem;
+    padding-top: 2%;
+  }
+
+  .first-section .details {
+    font-size: 1rem;
+    padding-top: 2%;
+    line-height: 2rem;
+  }
+
+  /* .second-section .title {
+    padding-top: 3rem;
+  } */
+
+  footer {
+    position: absolute;
+    bottom: -12%;
+    left: 42%;
+  }
 }
