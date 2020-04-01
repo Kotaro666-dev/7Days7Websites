@@ -17,31 +17,163 @@
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
       rel="stylesheet"
     />
     <script defer src="index.js"></script>
     <title>Frontend Mentor | Insure landing page</title>
   </head>
   <body>
-    How we work Blog Account View plans Humanizing your insurance. Get your life
-    insurance coverage easier and faster. We blend our expertise and technology
-    to help you find the plan that’s right for you. Ensure you and your loved
-    ones are protected. View plans We’re different Snappy Process Our
-    application process can be completed in minutes, not hours. Don’t get stuck
-    filling in tedious forms. Affordable Prices We don’t want you worrying about
-    high monthly costs. Our prices may be low, but we still offer the best
-    coverage possible. People First Our plans aren’t full of conditions and
-    clauses to prevent payouts. We make sure you’re covered when you need it.
-    Find out more about how we work How we work Our company How we work Why
-    Insure? View plans Reviews Help me FAQ Terms of use Privacy policy Cookies
-    Contact Sales Support Live chat Others Careers Press Licenses
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="container">
+      <header>
+        <img class="logo-header" src="./images/logo.svg" alt="logo" />
+        <nav id="navigator">
+          <ul>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+        <button class="btn-header btn-header_upper">
+          <span>View plans</span>
+        </button>
+        <img
+          class="bg-header"
+          src="./images/image-intro-mobile.jpg"
+          alt="a picture of family"
+        />
+        <div class="title header-title">Humanizing<br />your insurance.</div>
+        <div class="details header-details">
+          Get your life insurance coverage easier and faster. We blend our
+          expertise and technology to help you find the plan that’s right for
+          you. Ensure you and your loved ones are protected.
+        </div>
+        <button class="btn-header btn-header_lower">
+          <span>View plans</span>
+        </button>
+      </header>
+      <main>
+        <div class="title main-title">We’re different</div>
+        <div class="column column-first">
+          <img
+            class="logo-main"
+            src="./images/icon-snappy-process.svg"
+            alt="icon-snappy-process"
+          />
+          <div class="main-subtitle">
+            Snappy Process
+          </div>
+          <div class="main-details">
+            Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.
+          </div>
+        </div>
+        <div class="column column-second">
+          <img
+            class="logo-main"
+            src="./images/icon-affordable-prices.svg"
+            alt="icon-snappy-process"
+          />
+          <div class="main-subtitle">
+            Affordable prices
+          </div>
+          <div class="main-details">
+            We don’t want you worrying about high monthly costs. Our prices may
+            be low, but we still offer the best coverage possible.
+          </div>
+        </div>
+        <div class="column column-third">
+          <img
+            class="logo-main"
+            src="./images/icon-people-first.svg"
+            alt="icon-snappy-process"
+          />
+          <div class="main-subtitle">
+            People First
+          </div>
+          <div class="main-details">
+            Our plans aren’t full of conditions and clauses to prevent payouts.
+            We make sure you’re covered when you need it.
+          </div>
+        </div>
+        <div class="ads">
+          <div class="title ads-title">Find out more about how we work</div>
+          <button class="btn-ads"><span>How we work</span></button>
+        </div>
+      </main>
+      <footer>
+        <img class="logo-footer" src="./images/logo.svg" alt="logo" />
+        <div class="social-items">
+          <ul>
+            <li>
+              <a href="#" aria-label="Follow Me"
+                ><img src="./images/icon-facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow Me"
+                ><img src="./images/icon-twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow Me"
+                ><img src="./images/icon-pinterest.svg" alt="pinterest"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow Me"
+                ><img src="./images/icon-instagram.svg" alt="instragram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <div class="nav-section">
+            <div class="nav-title">Our company</div>
+            <ul>
+              <li><a href="#">How we work</a></li>
+              <li><a href="#">Why Insure?</a></li>
+              <li><a href="#">View plans</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="nav-section">
+            <div class="nav-title">Help me</div>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="nav-section">
+            <div class="nav-title">Contact</div>
+            <ul>
+              <li><a href="#">Sales</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Live chat</a></li>
+            </ul>
+          </div>
+          <div class="nav-section">
+            <div class="nav-title">Others</div>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Licenses</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#" target="_blank">Kotaro</a>.
+        </div>
+      </footer>
     </div>
   </body>
 </html>

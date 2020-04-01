@@ -18,10 +18,16 @@
 
 header {
   font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  /* background-image: url(./images/); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 body {
   font-family: "Karla", sans-serif;
+  font-weight: 400;
 }
 
 .attribution {
