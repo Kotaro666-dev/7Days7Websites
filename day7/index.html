@@ -31,6 +31,12 @@
     <div class="container">
       <header>
         <img class="logo-header" src="./images/logo.svg" alt="logo" />
+        <img
+          class="hamburger"
+          id="hamburger"
+          src="./images/icon-hamburger.svg"
+          alt="navigation hamburger"
+        />
         <nav id="navigator">
           <ul>
             <li><a href="#">How we work</a></li>
@@ -41,24 +47,57 @@
         <button class="btn-header btn-header_upper">
           <span>View plans</span>
         </button>
+      </header>
+      <main class="main-first">
         <img
-          class="bg-header"
+          class="bg-header-mobile"
           src="./images/image-intro-mobile.jpg"
           alt="a picture of family"
         />
-        <div class="title header-title">Humanizing<br />your insurance.</div>
-        <div class="details header-details">
-          Get your life insurance coverage easier and faster. We blend our
-          expertise and technology to help you find the plan that’s right for
-          you. Ensure you and your loved ones are protected.
+        <img
+          class="bg-header-desktop"
+          src="./images/image-intro-desktop.jpg"
+          alt="a picture of family"
+        />
+        <img
+            class="bg-pattern-intro-left-desktop"
+            src="./images/bg-pattern-intro-left-desktop.svg"
+            alt="background pattern"
+          />
+          <img
+            class="bg-pattern-intro-right-desktop"
+            src="./images/bg-pattern-intro-right-desktop.svg"
+            alt="background pattern"
+          />
+        <div class="feature">
+          <img
+            class="bg-pattern-intro-left-mobile"
+            src="./images/bg-pattern-intro-left-mobile.svg"
+            alt="background pattern"
+          />
+          <hr class="hr-desktop" />
+          <div class="title header-title">Humanizing<br />your insurance.</div>
+          <div class="details header-details">
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that’s right for
+            you. Ensure you and your loved ones are protected.
+          </div>
+          <button class="btn-header btn-header_lower">
+            <span>View plans</span>
+          </button>
+          <img
+            class="bg-pattern-intro-right-mobile"
+            src="./images/bg-pattern-intro-right-mobile.svg"
+            alt="background pattern"
+          />
+
         </div>
-        <button class="btn-header btn-header_lower">
-          <span>View plans</span>
-        </button>
-      </header>
-      <main>
+      </main>
+      <main class="main-second">
+        <hr class="hr1" />
         <div class="title main-title">We’re different</div>
-        <div class="column column-first">
+        <div class="flex-desktop">
+        <div class="column">
           <img
             class="logo-main"
             src="./images/icon-snappy-process.svg"
@@ -72,7 +111,7 @@
             Don’t get stuck filling in tedious forms.
           </div>
         </div>
-        <div class="column column-second">
+        <div class="column">
           <img
             class="logo-main"
             src="./images/icon-affordable-prices.svg"
@@ -86,7 +125,7 @@
             be low, but we still offer the best coverage possible.
           </div>
         </div>
-        <div class="column column-third">
+        <div class="column">
           <img
             class="logo-main"
             src="./images/icon-people-first.svg"
@@ -100,12 +139,34 @@
             We make sure you’re covered when you need it.
           </div>
         </div>
-        <div class="ads">
-          <div class="title ads-title">Find out more about how we work</div>
-          <button class="btn-ads"><span>How we work</span></button>
+      </div>
+        <div class="ads-container">
+          <div class="square">
+            <img
+              class="bg-pattern-how-we-work-mobile"
+              src="./images/bg-pattern-how-we-work-mobile.svg"
+              alt="background pattern"
+            />
+            <!-- <img
+              class="bg-pattern-how-we-work-desktop"
+              src="./images/bg-pattern-how-we-work-desktop.svg"
+              alt="background pattern"
+            /> -->
+            <div class="ads">
+                <img
+                class="bg-pattern-how-we-work-desktop"
+                src="./images/bg-pattern-how-we-work-desktop.svg"
+                alt="background pattern"
+              />
+              <div class="title ads-title">Find out more<span class="break"></span> about how we work</div>
+              <button class="btn-ads"><span>How we work</span></button>
+            </div>
+          </div>
         </div>
       </main>
+
       <footer>
+        <div class="upper-footer">
         <img class="logo-footer" src="./images/logo.svg" alt="logo" />
         <div class="social-items">
           <ul>
@@ -131,6 +192,10 @@
             </li>
           </ul>
         </div>
+      </div>
+        <hr class="hr2">
+        <div class="lower-footer">
+
         <div class="footer-nav">
           <div class="nav-section">
             <div class="nav-title">Our company</div>
@@ -167,6 +232,7 @@
             </ul>
           </div>
         </div>
+      </div>
         <div class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -174,6 +240,5 @@
           >. Coded by <a href="#" target="_blank">Kotaro</a>.
         </div>
       </footer>
-    </div>
   </body>
 </html>
