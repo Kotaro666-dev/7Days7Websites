@@ -425,16 +425,30 @@ footer {
   }
 
   .bg-header-desktop {
+    display: block;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .bg-pattern-intro-left-desktop {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 85%;
+    left: 0;
+    z-index: 2;
   }
 
   .bg-pattern-intro-left-mobile {
+    display: none;
     /* width: 100%; */
-    top: 60vh;
-    left: 0;
-    z-index: 2;
+    /* top: 60vh; */
+    /* left: 0; */
+    /* z-index: 2; */
   }
 
   .header-title {
