@@ -551,6 +551,8 @@ footer {
 /* MEDIA QUERY: TABLET */
 /* ********************************* */
 
+/* 
+
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .main-first {
     height: 170vh;
@@ -581,10 +583,6 @@ footer {
 
   .bg-pattern-intro-left-mobile {
     display: none;
-    /* width: 100%; */
-    /* top: 60vh; */
-    /* left: 0; */
-    /* z-index: 2; */
   }
 
   .header-title {
@@ -604,7 +602,6 @@ footer {
     width: 100%;
     height: 280vh;
     max-height: 3000px;
-    /* background: red; */
     padding-top: 20vh;
   }
 
@@ -627,7 +624,6 @@ footer {
 
   .ads-container {
     height: 100vh;
-    /* background: green; */
   }
 
   .ads-title {
@@ -647,6 +643,8 @@ footer {
     font-size: 2.5vh;
   }
 }
+
+*/
 
 /* ********************************* */
 /* MEDIA QUERY: LAPTOP */
