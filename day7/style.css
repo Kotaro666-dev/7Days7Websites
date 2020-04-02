@@ -780,8 +780,8 @@ footer {
 
   .main-first {
     height: 45vw;
-    min-height: 500px;
-    max-height: 650px;
+    /* min-height: 500px;
+    max-height: 650px; */
   }
   /* .btn-header_upper .main-first {
     height: 65vh;
@@ -819,7 +819,7 @@ footer {
     /* background: red; */
     text-align: left;
     padding-left: 5vw;
-    padding-top: 8vh;
+    padding-top: 5vh;
   }
 
   .hr-desktop {
