@@ -1,4 +1,6 @@
+/* ********************************* */
 /* INITIALIZATION */
+/* ********************************* */
 
 * {
   padding: 0;
@@ -8,17 +10,23 @@
 }
 
 :root {
+  /* ********************************* */
   /* Primary */
+  /* ********************************* */
   --clr-darkViolet: hsl(256, 26%, 20%);
   --clr-grayBlue: hsl(216, 30%, 68%);
 
+  /* ********************************* */
   /* Neutral */
+  /* ********************************* */
   --clr-veryDarkViolet: hsl(270, 9%, 17%);
   --clr-darkGrayViolet: hsl(273, 4%, 51%);
   --clr-veryLightGray: hsl(0, 0%, 98%);
 }
 
+/* ********************************* */
 /* GENERAL  */
+/* ********************************* */
 
 body {
   font-family: "DM Serif Display", serif;
@@ -77,7 +85,9 @@ hr {
   border-width: 1px;
 }
 
+/* ********************************* */
 /* HEADER */
+/* ********************************* */
 
 header {
   position: relative;
@@ -93,24 +103,115 @@ header {
   left: 5%;
 }
 
-nav {
-  display: none;
-}
-
-.btn-header_upper {
-  display: none;
-}
-
 .hamburger {
   height: 50%;
   position: absolute;
   top: 25%;
   right: 5%;
+  visibility: visible;
 }
 
-/* MAIN FIRST SECTION */
+.hamburger:active {
+  transform: scale(0.95);
+}
 
-/* Display for Destkop */
+.close {
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  /* right: 20%; */
+  visibility: hidden;
+}
+
+.close:active {
+  transform: scale(0.95);
+}
+
+/* ********************************* */
+/* NAVIGATION BAR - WHEN HAMBURGER CLICKED -  */
+/* ********************************* */
+.navigation-page {
+  position: fixed;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: var(--clr-darkViolet);
+  z-index: 100;
+  /* visibility: visible; */
+
+  /* text-align: center; */
+}
+
+nav {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  width: 50vw;
+  margin: 1vh 0;
+  /* background: red; */
+}
+
+nav ul li a {
+  font-size: 5vh;
+  color: var(--clr-grayBlue);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.btn-header_upper {
+  display: block;
+  height: 10vw;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  /* transform: translateX(-50%) translateY(-55%); */
+  width: 80vw;
+  color: white;
+  border: solid 1px white;
+}
+
+.btn-header_upper span {
+  font-family: "Karla", sans-serif;
+  font-size: 5vh;
+}
+
+.btn-header_upper:hover {
+  color: var(--clr-darkViolet);
+  background: white;
+}
+
+.btn-header_upper:active {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  transform: scale(0.98);
+  /* transform: translateX(-50%) translateY(-55%); */
+}
+
+/* ********************************* */
+/* MAIN FIRST SECTION */
+/* ********************************* */
+
+/* ********************************* */
+/* DISPLAY NONE: ELEMENTS FOR LAPTOP */
+/* ********************************* */
 
 .bg-header-desktop {
   display: none;
@@ -132,7 +233,9 @@ nav {
   display: none;
 }
 
-/* -------------------------- */
+/* ********************************* */
+/* ********************************* */
+/* ********************************* */
 
 .main-first {
   position: relative;
@@ -193,7 +296,9 @@ nav {
   color: var(--clr-darkViolet);
 }
 
-/* SECOND MAIN SECTION */
+/* ********************************* */
+/******   SECOND MAIN SECTION ********/
+/* ********************************* */
 
 .main-second {
   width: 100%;
@@ -302,7 +407,9 @@ nav {
   color: var(--clr-darkViolet);
 }
 
+/* ********************************* */
 /* FOOTER */
+/* ********************************* */
 
 footer {
   width: 100%;
@@ -415,6 +522,10 @@ footer {
   text-decoration: none;
 }
 
+/* ********************************* */
+/* MEDIA QUERY: TABLET */
+/* ********************************* */
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .main-first {
     height: 175vh;
@@ -514,9 +625,13 @@ footer {
   }
 }
 
+/* ********************************* */
+/* MEDIA QUERY: LAPTOP */
+/* ********************************* */
 @media (min-width: 768px) {
-  /* ONLY FOR DESKTOP */
-
+  /* ********************************* */
+  /* DISPLAY NONE: ELEMENTS FOR MOBILE */
+  /* ********************************* */
   .bg-header-mobile {
     display: none;
   }
@@ -532,11 +647,18 @@ footer {
   .bg-pattern-how-we-work-mobile {
     display: none;
   }
+
   .hamburger {
     display: none;
   }
 
-  /* ---------------------------- */
+  .close {
+    display: none;
+  }
+
+  /* ********************************* */
+  /* ********************************* */
+  /* ********************************* */
 
   header {
     width: 100%;
@@ -550,23 +672,81 @@ footer {
     left: 5%;
   }
 
+  /* ************************************** */
+  .navigation-page {
+    position: relative;
+    display: block;
+    height: inherit;
+    width: inherit;
+    background: transparent;
+    z-index: 0;
+  }
+  /* **************************************** */
+
   nav {
-    display: none;
-    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    transform: none;
   }
 
   nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: right;
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    width: 10vw;
+    margin: 0 0.5rem;
+    /* background: red; */
+  }
+
+  nav ul li a {
+    font-size: 1.5vw;
+    color: var(--clr-grayBlue);
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: var(--clr-darkViolet);
   }
 
   .btn-header_upper {
-    display: none;
+    display: block;
+    height: 2.5vw;
+    position: absolute;
+    top: 30%;
+    left: 88%;
+    /* right: 2%; */
+    transform: none;
+    width: 10vw;
+    color: var(--clr-darkViolet);
+    border: solid 1px var(--clr-darkViolet);
   }
 
-  .main-first {
+  .btn-header_upper span {
+    font-family: "Karla", sans-serif;
+    font-size: 1.2vw;
+  }
+
+  .btn-header_upper:hover {
+    color: white;
+    background: var(--clr-darkViolet);
+    border: solid 1px transparent;
+  }
+
+  .btn-header_upper:active {
+    position: absolute;
+    top: 30%;
+    left: 88%;
+    transform: scale(0.9);
+  }
+
+  .btn-header_upper .main-first {
     height: 65vh;
   }
 
@@ -631,8 +811,10 @@ footer {
     border: solid 2px white;
     color: white;
   }
-
+  /* ********************************* */
   /* MAIN SECOND SECTION */
+  /* ********************************* */
+
   .main-second {
     width: 90%;
     height: 200vh;
@@ -748,9 +930,11 @@ footer {
     width: 20%;
 
     margin-top: 12vh;
+    z-index: 10;
   }
-
+  /* ********************************* */
   /* FOOTER */
+  /* ********************************* */
 
   footer {
     display: relative;
