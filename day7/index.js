@@ -2,6 +2,8 @@ const hamburger = document.getElementById("hamburger");
 const close = document.getElementById("close");
 const navigation = document.getElementById("navigationPage");
 
+hamburger.style.visibility = "visible";
+
 function changeNavIcon() {
   if (hamburger.style.visibility == "visible") {
     hamburger.style.visibility = "hidden";

@@ -108,7 +108,8 @@ header {
   position: absolute;
   top: 25%;
   right: 5%;
-  visibility: visible;
+  /* visibility: visible; */
+  /* Index.js で初期設定済み */
 }
 
 .hamburger:active {
@@ -122,6 +123,7 @@ header {
   right: 5%;
   /* right: 20%; */
   visibility: hidden;
+  z-index: 200;
 }
 
 .close:active {
@@ -138,7 +140,7 @@ header {
   width: 100vw;
   background: var(--clr-darkViolet);
   z-index: 100;
-  /* visibility: visible; */
+  visibility: hidden;
 
   /* text-align: center; */
 }
