@@ -91,9 +91,12 @@ hr {
 
 header {
   position: relative;
+  /* position: fixed; */
   display: block;
   width: 100%;
   height: 20vw;
+  z-index: 1000;
+  background: white;
 }
 
 .logo-header {
@@ -104,7 +107,8 @@ header {
 }
 
 .hamburger {
-  height: 50%;
+  /* height: 50%; */
+  height: 10vw;
   position: absolute;
   top: 25%;
   right: 5%;
@@ -116,12 +120,20 @@ header {
   transform: scale(0.95);
 }
 
-.close {
+/* .close {
   height: 50%;
   position: absolute;
   top: 25%;
   right: 5%;
-  /* right: 20%; */
+  visibility: hidden;
+  z-index: 200;
+} */
+
+.close {
+  height: 10vw;
+  position: fixed;
+  top: 2.2%;
+  right: 5%;
   visibility: hidden;
   z-index: 200;
 }
@@ -133,7 +145,12 @@ header {
 /* ********************************* */
 /* NAVIGATION BAR - WHEN HAMBURGER CLICKED -  */
 /* ********************************* */
-.navigation-page {
+
+.navigation-page-laptop {
+  visibility: hidden;
+}
+
+.navigation-page-mobile {
   position: fixed;
   display: block;
   height: 100vh;
@@ -142,7 +159,7 @@ header {
   z-index: 100;
   visibility: hidden;
 
-  /* text-align: center; */
+  opacity: 0.95;
 }
 
 nav {
@@ -164,11 +181,10 @@ nav ul {
 nav ul li {
   width: 50vw;
   margin: 1vh 0;
-  /* background: red; */
 }
 
 nav ul li a {
-  font-size: 5vh;
+  font-size: 7vw;
   color: var(--clr-grayBlue);
   text-decoration: none;
 }
@@ -183,7 +199,6 @@ nav ul li a:hover {
   position: absolute;
   top: 45%;
   left: 10%;
-  /* transform: translateX(-50%) translateY(-55%); */
   width: 80vw;
   color: white;
   border: solid 1px white;
@@ -191,7 +206,7 @@ nav ul li a:hover {
 
 .btn-header_upper span {
   font-family: "Karla", sans-serif;
-  font-size: 5vh;
+  font-size: 7vw;
 }
 
 .btn-header_upper:hover {
@@ -204,7 +219,13 @@ nav ul li a:hover {
   top: 45%;
   left: 10%;
   transform: scale(0.98);
-  /* transform: translateX(-50%) translateY(-55%); */
+}
+
+.bg-pattern-mobile-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
 }
 
 /* ********************************* */
@@ -424,6 +445,10 @@ footer {
   align-items: center;
 }
 
+.upper-footer {
+  text-align: center;
+}
+
 .logo-footer {
   max-width: 25vw;
   padding-top: 10vh;
@@ -477,8 +502,6 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 5vh;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .nav-section {
@@ -528,9 +551,9 @@ footer {
 /* MEDIA QUERY: TABLET */
 /* ********************************* */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 769px) {
   .main-first {
-    height: 175vh;
+    height: 170vh;
   }
 
   .bg-header-mobile {
@@ -581,6 +604,8 @@ footer {
     width: 100%;
     height: 280vh;
     max-height: 3000px;
+    /* background: red; */
+    padding-top: 20vh;
   }
 
   .main-subtitle {
@@ -621,16 +646,12 @@ footer {
   .btn-ads span {
     font-size: 2.5vh;
   }
-
-  footer {
-    font-size: 5rem;
-  }
 }
 
 /* ********************************* */
 /* MEDIA QUERY: LAPTOP */
 /* ********************************* */
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   /* ********************************* */
   /* DISPLAY NONE: ELEMENTS FOR MOBILE */
   /* ********************************* */
@@ -675,14 +696,21 @@ footer {
   }
 
   /* ************************************** */
-  .navigation-page {
+
+  .navigation-page-mobile {
+    visibility: hidden;
+  }
+
+  .navigation-page-laptop {
     position: relative;
     display: block;
     height: inherit;
     width: inherit;
     background: transparent;
-    z-index: 0;
+    z-index: 100;
+    visibility: visible;
   }
+
   /* **************************************** */
 
   nav {
@@ -748,9 +776,16 @@ footer {
     transform: scale(0.9);
   }
 
-  .btn-header_upper .main-first {
+  /* ********************************* */
+  /* MAIN FIRST SECTION */
+  /* ********************************* */
+
+  .main-first {
     height: 65vh;
   }
+  /* .btn-header_upper .main-first {
+    height: 65vh;
+  } */
 
   .bg-header-desktop {
     display: block;
@@ -819,10 +854,10 @@ footer {
 
   .main-second {
     width: 90%;
-    height: 200vh;
+    height: 170vh;
     max-height: 3000px;
 
-    padding-top: 40vh;
+    padding-top: 25vh;
     margin: 0 auto;
     text-align: left;
     /* background: red; */
