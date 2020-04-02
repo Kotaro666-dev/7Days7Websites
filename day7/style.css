@@ -779,7 +779,9 @@ footer {
   /* ********************************* */
 
   .main-first {
-    height: 65vh;
+    height: 45vw;
+    min-height: 450px;
+    max-height: 500px;
   }
   /* .btn-header_upper .main-first {
     height: 65vh;
