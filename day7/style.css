@@ -551,7 +551,7 @@ footer {
 /* MEDIA QUERY: TABLET */
 /* ********************************* */
 
-@media screen and (min-width: 481px) and (max-width: 769px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .main-first {
     height: 170vh;
   }
@@ -651,7 +651,7 @@ footer {
 /* ********************************* */
 /* MEDIA QUERY: LAPTOP */
 /* ********************************* */
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   /* ********************************* */
   /* DISPLAY NONE: ELEMENTS FOR MOBILE */
   /* ********************************* */
